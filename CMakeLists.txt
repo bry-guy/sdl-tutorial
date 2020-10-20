@@ -15,7 +15,7 @@ include_directories(${SDL2_INCLUDE_DIR}
                     ${SDL2_TTF_INCLUDE_DIR}
 					${SDL2_MIXER_INCLUDE_DIR})
 
-add_executable(HelloSDL src/hello_SDL.cpp)
+add_executable(HelloSDL hello_SDL.cpp)
 
 target_link_libraries(HelloSDL ${SDL2_LIBRARY}
                              ${SDL2_IMAGE_LIBRARIES}

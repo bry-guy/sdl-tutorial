@@ -125,19 +125,19 @@ int main(int argc, char **argv) {
 						SDL_SetRenderDrawColor(renderer, randInt(0, 255), randInt(0, 255), randInt(0, 255), 255);
 						break;
 					case SDLK_RIGHT:
-						loadRendererWithSurfaceToTexture(renderer, loadSurface("../assets/right.bmp"));
+						loadRendererWithSurfaceToTexture(renderer, loadSurface("assets/right.bmp"));
 						break;
 					case SDLK_LEFT:
-						loadRendererWithSurfaceToTexture(renderer, loadSurface("../assets/left.bmp"));
+						loadRendererWithSurfaceToTexture(renderer, loadSurface("assets/left.bmp"));
 						break;
 					case SDLK_UP:
-						loadRendererWithSurfaceToTexture(renderer, loadSurface("../assets/up.bmp"));
+						loadRendererWithSurfaceToTexture(renderer, loadSurface("assets/up.bmp"));
 						break;
 					case SDLK_DOWN:
-						loadRendererWithSurfaceToTexture(renderer, loadSurface("../assets/down.bmp"));
+						loadRendererWithSurfaceToTexture(renderer, loadSurface("assets/down.bmp"));
 						break;
 					default:
-						loadRendererWithSurfaceToTexture(renderer, loadSurface("../assets/hello_world.bmp"));
+						loadRendererWithSurfaceToTexture(renderer, loadSurface("assets/hello_world.bmp"));
 						break;
 				}
             }
