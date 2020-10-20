@@ -65,7 +65,7 @@ SDL_Renderer* createRenderer(SDL_Window* window)
 
 SDL_Surface* loadSurface(const char *path)
 {
-	SDL_Surface *surface = SDL_LoadBMP(path);
+	SDL_Surface *surface = IMG_Load(path);
 	CHECK_FATAL(surface == NULL, SDL_GetError());
 	return surface;
 }
@@ -103,6 +103,9 @@ int main(int argc, char **argv) {
 
     // Initialize SDL
     CHECK_FATAL(SDL_Init(SDL_INIT_VIDEO) != 0, SDL_GetError());
+
+	// Initialize SDL_Image
+	CHECK_FATAL((IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG), IMG_GetError());
 
 	SDL_Window *window = createWindow("Hello SDL", 800, 600);
 
